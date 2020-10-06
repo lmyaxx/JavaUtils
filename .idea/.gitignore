@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Default ignored files
 /workspace.xml
@@ -41,3 +42,7 @@ DB_INIT_SQL.sql
 
 #simidroid file from github
 #android-platforms
+=======
+# Default ignored files
+/workspace.xml
+>>>>>>> f5fca2e75730dbb45be6ba972bb13fe8fa79abd8
