@@ -1,5 +1,3 @@
-package method;
-
 import java.util.LinkedList;
 import java.util.List;
 

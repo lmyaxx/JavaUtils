@@ -1,5 +1,3 @@
-package email;
-
 import java.util.Date;
 import java.util.Properties;
 

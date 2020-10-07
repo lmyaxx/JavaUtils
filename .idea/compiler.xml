@@ -7,6 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="file-manipulate" />
+        <module name="email" />
+        <module name="util_test" />
       </profile>
     </annotationProcessing>
   </component>
