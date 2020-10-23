@@ -20,15 +20,18 @@ public class RegexExtractor {
 
     @Test
     public void test(){
-        String url = "    (9200)  更新日期：2019-06-08 ";
-        Pattern pattern = compile(".*更新日期：(\\d*-\\d*-\\d*).*");
-        Matcher matcher=pattern.matcher(url);
+        System.out.println("http://m.xitongjia.com/zhuanti/mfwzwp/".matches("http://m.xitongjia.com/"+"[moblist|zhuanti].*"));
+    }
 
-        while(matcher.find()){
-            String pageNum =  matcher.group(1);
-            System.out.println(matcher.group(1));
-            System.out.println(url.replaceFirst("reqPageNum=\\d*","reqPageNum=" + (Integer.parseInt(pageNum) + 1)));
+    public static String extractInfo(String raw, String pattern){
+        if(raw==null){
+            return null;
         }
-
+        Pattern p = compile(pattern);
+        Matcher matcher = p.matcher(raw);
+        if(matcher.find()){
+            return matcher.group(1);
+        }
+        return null;
     }
 }
